@@ -79,6 +79,35 @@ document.addEventListener('DOMContentLoaded', function () {
     cartLi.addEventListener('click', function () {
         cartShow.classList.toggle('active');
     });
+   /* const popupQuerySelector = ".show";
+    document.addEventListener('click', (e) => {
+        // Check if the filter list parent element exist
+        const isClosest = e.target.closest(popupQuerySelector);
+          
+        // If `isClosest` equals falsy & popup has the class `show`
+        // then hide the popup
+        if (!isClosest && cartShow.classList.contains("active")) {
+          popupEl.classList.remove("active");
+        }
+    });*/
+
+    /*document.addEventListener(
+        "click",
+        function(event) {
+          // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+          if (
+            event.target.matches("#cart") ||
+            !event.target.closest(".active")
+          ) {
+            closeModal()
+          }
+        },
+        false
+    )
+      
+    function closeModal() {
+        document.querySelector(".active").style.display = "none"
+    }*/
 
     deleteButton.addEventListener('click', remove);
 

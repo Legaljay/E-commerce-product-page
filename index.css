@@ -298,6 +298,7 @@ section{width:max(80%); margin: 4rem auto;display: grid; grid-template-columns: 
     }
     .counter-btn{width: 95%;}
     #cart-btn{width: 100%;}
+    .show{width: max(22rem);right: 1.25rem;}
 
 
 }
