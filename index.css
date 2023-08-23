@@ -282,7 +282,7 @@ section{width:max(80%); margin: 4rem auto;display: grid; grid-template-columns: 
 }
 
 
-@media (width < 500px){
+@media (max-width:500px){
     section{width:max(100%); margin: 0;}
     .product-img{padding: 0;}
     .container{display: grid; padding: 0vw 4.2vw;}
