@@ -139,9 +139,9 @@ section{width:max(80%); margin: 4rem auto;display: grid; grid-template-columns: 
     padding: 20px;
     font-size: 20px;
     cursor: pointer;
+    display: flex; flex: 1; gap: 20px;justify-content: center; align-items: center;
 }
 
-#cart-btn{display: flex; flex: 1; gap: 20px;justify-content: center;}
 
 #cart-btn:hover{
     transform: scale(1.08);
@@ -203,6 +203,7 @@ section{width:max(80%); margin: 4rem auto;display: grid; grid-template-columns: 
     display: block;
     justify-content: center;
     text-align: center;
+    padding: 5rem;
 }
 
 .grid{
@@ -234,11 +235,12 @@ section{width:max(80%); margin: 4rem auto;display: grid; grid-template-columns: 
     width: min(100%);
 }
 
-#menu-bar{margin-inline: 1em;}
+#menu-bar{display: none;margin-inline: 1em;}
 
 /***side navigation***/
 
 .side-nav {
+    display: none;
     height: 100%;
     width: 0;
     position: fixed;
@@ -282,6 +284,7 @@ section{width:max(80%); margin: 4rem auto;display: grid; grid-template-columns: 
 }
 
 
+
 @media (max-width:500px){
     section{width:max(100%); margin: 0;}
     .product-img{padding: 0;}
@@ -299,6 +302,10 @@ section{width:max(80%); margin: 4rem auto;display: grid; grid-template-columns: 
     .counter-btn{width: 95%;}
     #cart-btn{width: 100%;}
     .show{width: max(22rem);right: 1.25rem;}
+    .menu{display: none;}
+    .side-nav{display: block;}
+    #menu-bar{display: inline-block}
+    .thumbnails{display: none;}
 
 
 }

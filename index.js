@@ -1,3 +1,26 @@
+/***
+ * 
+ * 
+ * //DATA
+ * I want that onclick of the #addtoCart button the cart should feed from the DATA supplied
+ * in the LocalStorage using localStorage.getItems('data')
+ * 
+ * 
+ * 
+ * 
+ * //DELETE BUTTON
+ * I want to create an event listener that listens to clicks on #delete button
+ * The event should activate the function which clears the object data on the localStorage
+ * using localStorage.removeItem('data').
+ * and activates the emptyCart text in the DOM
+ * 
+ * 
+ * 
+ * 
+ * 
+ * ***/
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const decreaseButton = document.querySelector('#btn-decrease');
     const increaseButton = document.querySelector('#btn-increase');
@@ -12,6 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const cartLi = document.querySelector('#cart');
     const cartShow = document.querySelector('.show');
     const deleteButton = document.querySelector('#del-btn');
+
+    /*const productItem = [{productName : ,
+                            price: ,
+                            photo: ;}]*/
 
     function updateSupValue() {
         supElement.textContent = cartCounter.textContent;
